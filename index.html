@@ -8,6 +8,7 @@
     <title>Musical Instruments Store!</title>
     <link rel="shortcut icon" href="img/musical-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                 <img width="200" src="img/musical-store-logo.svg" alt="Musical Store Logo">
             </div>
             <div class="header__nav-links">
-                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#new-arrivals" class="header__nav-links-new-arrivals">New Arrivals</a>
                 <a href="">Best Selling</a>
                 <a href="">Guitars</a>
                 <a href="">Drums</a>
@@ -45,10 +46,17 @@
         <section id="new-arrivals" class="new-arrivals">
             <h2 class="new__arrivals-header">New Arrivals</h2>
             <div class="divider"></div>
+            <div>
+                <img class="new-arrivals__image" src="img/baby-yoda.jpeg" alt="Baby Yoda">
+            </div>
         </section>
     </main>
-    <footer>
-        <p>Hello Footer!</p>
+    <footer class="footer">
+        <form class="footer__form" method="post" action="https://formspree.io/f/mknyoovd">
+            <label>Client name: <input type="text" name="client-name"> </label>
+            <label>Client address: <input type="email" name="client-email"> </label>
+            <input type="submit">
+        </form>
     </footer>
 </body>
 
